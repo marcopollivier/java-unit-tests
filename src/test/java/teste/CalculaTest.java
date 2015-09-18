@@ -31,11 +31,8 @@ public class CalculaTest {
 		Calculadora.soma(null, null);
 	}
 	
-	@Test
+	@Test (expected = NullPointerException.class)
 	public void notFirstNullTest() {
-		thrown.expect(NullPointerException.class);
-		thrown.expectMessage("Os dois valores devem estar preenchidos");
-
 		Calculadora.soma(null, 5f);
 	}
 

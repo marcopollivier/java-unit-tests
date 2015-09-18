@@ -13,8 +13,8 @@ public class CalculaTest {
 	
 	@Test
 	public void test() {
-		Float soma = Calculadora.soma(1256f, 22252f);
-		assertEquals(23508f, soma, 1);
+		Float soma = Calculadora.soma(2f, 5f);
+		assertEquals(7f, soma, 0.5);
 	}
 
 	@Test
